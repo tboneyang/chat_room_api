@@ -25,8 +25,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'active_model_serializers'
 
-gem "devise"
-
 #this part is important so sqlite isn't used when this is served by heroku for example
 group :development do
   gem 'sqlite3'
