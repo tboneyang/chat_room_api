@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   namespace :api, defaults: {format: :json}, constraints: {subdomain: 'api'}, path: '/' do
     #this will nest the api under api.examplewebsite.com/
     #worry about versioning later
