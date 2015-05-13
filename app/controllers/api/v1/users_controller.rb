@@ -18,4 +18,14 @@ class Api::V1::UsersController < ApplicationController
     params.require(:user).permit(:email, :password, :password_confirmation)
   end
 
+  def update
+    user = User.find(params[:id])
+
+    if user.update(user_params)
+      render json: user, status:200, location: [:api, user]
+    else
+      render json: { errors: user.errors }, status: 422
+    end
+  end
+
 end
