@@ -11,6 +11,7 @@ Rails.application.routes.draw do
 
       #also check out rocketpants and versionist gem to handle versioning configuration
       resources :users
+      resources :sessions, :only => [:create, :destroy]
     end
 
   end
