@@ -33,6 +33,8 @@ gem 'furatto'
 gem 'font-awesome-rails'
 gem 'simple_form'
 
+gem 'rails-backbone'
+
 #this part is important so sqlite isn't used when this is served by heroku for example
 group :development do
   gem 'sqlite3'
