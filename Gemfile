@@ -27,6 +27,12 @@ gem 'active_model_serializers'
 
 gem 'devise'
 
+gem 'sabisu_rails', github: "IcaliaLabs/sabisu-rails"
+gem 'compass-rails'
+gem 'furatto'
+gem 'font-awesome-rails'
+gem 'simple_form'
+
 #this part is important so sqlite isn't used when this is served by heroku for example
 group :development do
   gem 'sqlite3'
